@@ -2,6 +2,7 @@
 
 - Includes hot module reloading.
 - Includes examples of selective server-side rendering.
+- Includes `dataloader` for extra smart batching and caching.
 - React aliased by `preact-compat` for smaller bundle size.
 - Sass/CSS all run through [CSSNext](http://cssnext.io/) PostCSS plugin.
 
