@@ -39,7 +39,7 @@ export const mixcloud = gql`
   }
 `;
 
-export const mixcloudResolvers = {
+export const mixcloudQueryWithResolvers = {
   Query: {
     profile: (_, args, { loaders }) => loaders.mixcloud.getProfile(),
     shows: (_, args, { loaders }) => loaders.mixcloud.getShows(),

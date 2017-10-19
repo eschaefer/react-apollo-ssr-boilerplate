@@ -1,7 +1,7 @@
 import gql from 'graphql-tag';
 import merge from 'lodash.merge';
 import { makeExecutableSchema } from 'graphql-tools';
-import { mixcloud, mixcloudResolvers } from './mixcloud';
+import { mixcloud, mixcloudQueryWithResolvers } from './mixcloud';
 
 const VERSION = '1.0.0';
 
@@ -28,7 +28,7 @@ const rootResolver = {
   },
 };
 
-const resolvers = merge(rootResolver, mixcloudResolvers);
+const resolvers = merge(rootResolver, mixcloudQueryWithResolvers);
 const schema = makeExecutableSchema({ typeDefs, resolvers });
 
 export default schema;
