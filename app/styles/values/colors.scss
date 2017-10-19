@@ -1,0 +1,18 @@
+/* "Values variables" are made possible by the postcss-icss-values plugin.
+   This makes variable dependencies explicit, and will throw a real error
+   during compilation if a name changes.
+
+   Usage info:
+   https://github.com/css-modules/css-modules/blob/master/docs/values-variables.md
+   https://github.com/css-modules/postcss-icss-values
+*/
+
+@value c-black #222;
+@value c-white #fff;
+
+/* Custom form color */
+@value label-gray #9ba7b3;
+
+/* From Tachyons */
+@value near-white #fafdff;
+@value light-blue #419fd9;

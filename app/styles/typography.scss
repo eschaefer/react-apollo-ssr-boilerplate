@@ -1,0 +1,5 @@
+@value headline-letter-spacing from './values/typography.scss';
+
+.headlineSpacing {
+  letter-spacing: headline-letter-spacing;
+}

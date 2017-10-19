@@ -1,0 +1,18 @@
+node_modules/*
+dist/*
+.env
+app/webpack-assets-client.json
+
+# Mac stuff
+.DS_Store
+
+# IDE config
+.vscode
+.idea
+
+# Testing report stuff
+lcov-report
+clover.xml
+coverage-final.json
+lcov.info
+test-report.xml

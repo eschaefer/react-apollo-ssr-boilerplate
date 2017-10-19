@@ -1,0 +1,14 @@
+/* "Values variables" are made possible by the postcss-icss-values plugin.
+   This makes variable dependencies explicit, and will throw a real error
+   during compilation if a name changes.
+
+   Usage info:
+   https://github.com/css-modules/css-modules/blob/master/docs/values-variables.md
+   https://github.com/css-modules/postcss-icss-values
+*/
+
+/* These values currently based on Tachyons _media-queries.css */
+
+@value screen-small 30em;
+@value screen-medium 60em;
+@value screen-large 75em;

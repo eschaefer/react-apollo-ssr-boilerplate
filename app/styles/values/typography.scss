@@ -1,0 +1,10 @@
+/* "Values variables" are made possible by the postcss-icss-values plugin.
+   This makes variable dependencies explicit, and will throw a real error
+   during compilation if a name changes.
+
+   Usage info:
+   https://github.com/css-modules/css-modules/blob/master/docs/values-variables.md
+   https://github.com/css-modules/postcss-icss-values
+*/
+
+@value headline-letter-spacing 0.035rem;

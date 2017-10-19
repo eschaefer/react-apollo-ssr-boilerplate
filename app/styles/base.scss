@@ -1,0 +1,41 @@
+/* sass-lint:disable class-name-format */
+@value c-black from './values/colors.scss';
+@value headline-letter-spacing from './values/typography.scss';
+
+:global {
+  html {
+    height: 100%;
+  }
+
+  body {
+    color: c-black;
+    font-weight: normal;
+    height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: headline-letter-spacing;
+    font-weight: normal;
+    margin-top: 0.35rem;
+    margin-bottom: 0.55rem;
+  }
+}
+
+/* 1. :global {} is to preserve the nested class selectors in the global scope,
+      so they do not get hashed by css-modules. Should only be RARELY used.
+      https://github.com/css-modules/css-modules#exceptions
+*/
+:global {
+  .root-element {
+    height: 100%; /* 1 */
+  }
+
+  .app {
+    min-height: 100%;
+  }
+}
