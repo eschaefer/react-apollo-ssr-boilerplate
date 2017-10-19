@@ -4,6 +4,7 @@ export const mixcloud = gql`
   type Show {
     url: String
     name: String
+    username: ID
     audio_length: Int
     created_time: String
     pictures: Pictures
@@ -15,7 +16,7 @@ export const mixcloud = gql`
     city: String
     country: String
     cloudcast_count: Int
-    username: String
+    username: ID
     url: String
     biog: String
     pictures: Pictures
@@ -23,7 +24,7 @@ export const mixcloud = gql`
 
   type Follower {
     name: String
-    username: String
+    username: ID
     url: String
     pictures: Pictures
   }
