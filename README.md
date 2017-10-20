@@ -33,3 +33,4 @@ yarn build:all && yarn start:prod
 ### TODO
 - Demonstrate [mutations](http://dev.apollodata.com/react/mutations.html)
 - Pass username as argument from react-router URL param
+- Add tests since I bothered to set up the Jest harness and stuff 🕴
