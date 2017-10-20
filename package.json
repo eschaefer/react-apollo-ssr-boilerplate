@@ -96,7 +96,7 @@
     "clear:assets": "rm -rf dist/assets/css/* && rm -rf dist/assets/js/*",
     "start:dev": "run-p build:dev test:watch",
     "start:prod": "node dist/server.js",
-    "test": "jest -u --ci --coverage",
+    "test": "jest -u --coverage",
     "test:watch": "jest -u --watchAll",
     "lint:js": "eslint app/**/*.{js,jsx}",
     "lint:styles": "sass-lint --config .sass-lint.yml '**/*.scss' --verbose --no-exit",
