@@ -72,7 +72,6 @@
     "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^21.0.1",
-    "jest-junit-reporter": "^1.1.0",
     "lint-staged": "^4.1.0",
     "node-mocks-http": "^1.6.4",
     "nodemon": "^1.12.0",
@@ -97,7 +96,7 @@
     "clear:assets": "rm -rf dist/assets/css/* && rm -rf dist/assets/js/*",
     "start:dev": "run-p build:dev test:watch",
     "start:prod": "node dist/server.js",
-    "test": "jest -u --ci --testResultsProcessor='./node_modules/jest-junit-reporter' --coverage",
+    "test": "jest -u --ci --coverage",
     "test:watch": "jest -u --watchAll",
     "lint:js": "eslint app/**/*.{js,jsx}",
     "lint:styles": "sass-lint --config .sass-lint.yml '**/*.scss' --verbose --no-exit",
@@ -117,8 +116,7 @@
     "coverageDirectory": ".",
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|scss)$": "identity-obj-proxy",
-      "testResultsProcessor": "./node_modules/jest-junit-reporter"
+      "\\.(css|scss)$": "identity-obj-proxy"
     }
   },
   "browserslist": [
