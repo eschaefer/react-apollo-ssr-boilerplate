@@ -1,7 +1,8 @@
 import gql from 'graphql-tag';
 import merge from 'lodash.merge';
-import { makeExecutableSchema } from 'graphql-tools';
+import { makeExecutableSchema, addMockFunctionsToSchema } from 'graphql-tools';
 import { mixcloud, mixcloudQueryWithResolvers } from './mixcloud';
+import mocks from './__mocks__/mockResolvers';
 
 const VERSION = '1.0.0';
 
@@ -32,3 +33,8 @@ const resolvers = merge(rootResolver, mixcloudQueryWithResolvers);
 const schema = makeExecutableSchema({ typeDefs, resolvers });
 
 export default schema;
+
+// NOTE: these are overriding the main resolvers for testing
+if (process.env.NODE_ENV === 'test') {
+  addMockFunctionsToSchema({ schema, mocks });
+}
